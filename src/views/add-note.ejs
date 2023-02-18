@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %>
+<body>
+    <%- include('./partial/nav.ejs') %>
+    <form id="post-form" method="post" action="/add-note">
+        <div class="form-info">
+          <label>title
+            <input type="text" name="title">
+          </label>
+          <label>text
+            <input type="text" name="text">
+          </label>
+          <label>author
+            <input type="text" name="author">
+          </label>
+        </div>
+        
+        <div class="form-button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+</body>
+</html>

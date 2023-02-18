@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %>
+<body>
+    <%- include('./partial/nav.ejs') %>
+    <form id="post-form" method="post" action="/add-user">
+        <div class="form-info">
+          <label>User name
+            <input type="text" name="username">
+          </label>
+          <label>Email
+            <input type="text" name="email">
+          </label>
+          <label>Password
+            <input type="text" name="password">
+          </label>
+        </div>
+        
+        <div class="form-button">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+</body>
+</html>

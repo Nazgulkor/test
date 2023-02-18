@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partial/head.ejs') %>
+<body>
+    <%- include('./partial/nav.ejs') %>
+
+    <% if (notes.length) { %>
+        <% notes.forEach(({ _id, title, text, author, createdAt }) => { %>
+          <div class="note-block">
+            <article>
+              <h2>
+                <a class="note-title" href="/notes/<%= _id %>"><%= title %></a>
+              </h2>
+              <p class="note-text"><%= text %></p>
+              <div class="note-author">
+                <span><%= author %></span>
+              </div>
+              <div>
+                <span><%= createdAt.toLocaleDateString() %></span>
+              </div>
+            </article>
+        </div>
+        <% }) %>
+      <% } %>
+</body>
+</html>

@@ -1,0 +1,33 @@
+nav {
+    width: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.note-block{
+    width: 900px;
+    background-color: rgb(170, 182, 182);
+    color: white;
+    font-size: 30px;
+    margin: 0 auto;
+}
+.note-title{
+    text-align: center;
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.one-note{
+    text-align: center;
+    font-size: 50px;
+}
